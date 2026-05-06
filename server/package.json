@@ -1,0 +1,10 @@
+{
+  "name": "techara-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development ..\\\\node_modules\\\\.bin\\\\tsx watch src/index.ts",
+    "start": "node dist/index.cjs"
+  }
+}
+

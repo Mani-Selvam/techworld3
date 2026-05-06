@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ✅ Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ✅ SEO Meta -->
+  <title>TechAra | Sindhu</title>
+  <meta name="description"
+    content="TechAra builds modern, high-performance web applications using React, TypeScript, and Express. Explore projects and client dashboards.">
+  <meta name="keywords" content="React, Vite, TypeScript, Express, Web Developer, Portfolio, TechAra">
+  <meta name="author" content="Mani Selvam">
+
+  <!-- ✅ Favicon -->
+  <link rel="shortcut icon" href="/attached_assets/favicon.png" type="image/x-icon">
+
+  <!-- ✅ Preconnect for Google Fonts with high priority -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- ✅ Optimized Font Loading: Only Poppins (primary font) with font-display swap -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  </noscript>
+
+  <!-- ✅ Preload Critical Hero Images for LCP Optimization (WebP, Compressed) -->
+  <link rel="preload" as="image" href="/attached_assets/hero-sindhu.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/attached_assets/hero-circle.webp" type="image/webp" />
+
+  <!-- ✅ Robots and Canonical Tags -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- ✅ Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:title" content="TechAra" />
+  <meta property="og:description"
+    content="TechAra builds modern, high-performance web applications using React, TypeScript, and Express. Explore projects and client dashboards." />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+
+  <!-- ✅ Twitter Card Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://yourdomain.com/" />
+  <meta property="twitter:title" content="TechAra" />
+  <meta property="twitter:description"
+    content="TechAra builds modern, high-performance web applications using React, TypeScript, and Express. Explore projects and client dashboards." />
+  <meta property="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+
+  <!-- ✅ Performance Hints -->
+  <meta name="theme-color" content="#8B5CF6" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- ✅ PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/attached_assets/favicon.png">
+
+  <!-- ✅ Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator && window === window.top) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+</body>
+
+</html>
